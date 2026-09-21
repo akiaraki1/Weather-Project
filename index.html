@@ -1,41 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Приложение погоды</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="card">
-        <div class="search">
-            <input 
-            type="text" 
-            placeholder="Введите название города"
-            spellcheck="false">
-            <button><img src="images/search.png" alt="иконка поиск"></button>
-        </div>
-        <div class="weather">
-            <img src="images/rain.png" class="weather-icon" alt="иконка дождя">
-            <h1 class="temp">22°c</h1>
-            <h2 class="city">Москва</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="images/humidity.png" alt="">
-                    <div>
-                        <p class="humidity">50%</p>
-                        <p>Влажность</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <img src="images/wind.png" alt="">
-                    <div>
-                        <p class="wind">15 км/ч</p>
-                        <p>Скорость ветра</p>
-                    </div>
-                </div>
+
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Введите название города"
+          spellcheck="false"
+        />
+        <button><img src="images/search.png" alt="иконка поиск" /></button>
+      </div>
+
+      <div class="error">
+        <p>Неверное название города</p>
+      </div>
+
+      <div class="weather">
+        <img src="images/rain.png" class="weather-icon" alt="иконка дождя" />
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">Москва</h2>
+
+        <div class="details">
+
+          <div class="col">
+            <img src="images/humidity.png" alt="" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>Влажность</p>
             </div>
+          </div>
+
+          <div class="col">
+            <img src="images/wind.png" alt="" />
+            <div>
+              <p class="wind">15 км/ч</p>
+              <p>Скорость ветра</p>
+            </div>
+          </div>
+          
         </div>
+
+      </div>
+
     </div>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>

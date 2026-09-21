@@ -59,6 +59,17 @@ body {
     margin-bottom: 30px;
 }
 
+.weather {
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
 .weather h1 {
     font-size: 80px;
     font-weight: 700;
